@@ -1,3 +1,5 @@
+using AlgorithmsInGUI.Classes;
+
 namespace AlgorithmsInGUI
 {
     public partial class Form1 : Form
@@ -20,6 +22,12 @@ namespace AlgorithmsInGUI
             isEmpty(txtInput.Text);
             lstResults.Items.Clear();
             lstResults.Items.Add($"Solving FizzBuz for number {txtInput.Text}");
+
+            FizzBuzz fizzBuzz = new FizzBuzz();
+
+            fizzBuzz.Solve(int.Parse(txtInput.Text));
+
+
         }
 
 
