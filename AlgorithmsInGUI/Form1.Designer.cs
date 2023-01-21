@@ -38,13 +38,15 @@
             this.btnPow = new System.Windows.Forms.Button();
             this.btnFactorial = new System.Windows.Forms.Button();
             this.btnPrimes = new System.Windows.Forms.Button();
+            this.txtInput = new System.Windows.Forms.TextBox();
             this.grpbCollection.SuspendLayout();
             this.grpbResults.SuspendLayout();
+            this.grpbInput.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAbout
             // 
-            this.btnAbout.Location = new System.Drawing.Point(12, 456);
+            this.btnAbout.Location = new System.Drawing.Point(352, 400);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(96, 36);
             this.btnAbout.TabIndex = 0;
@@ -96,9 +98,10 @@
             // 
             // grpbInput
             // 
+            this.grpbInput.Controls.Add(this.txtInput);
             this.grpbInput.Location = new System.Drawing.Point(18, 359);
             this.grpbInput.Name = "grpbInput";
-            this.grpbInput.Size = new System.Drawing.Size(428, 77);
+            this.grpbInput.Size = new System.Drawing.Size(216, 77);
             this.grpbInput.TabIndex = 3;
             this.grpbInput.TabStop = false;
             this.grpbInput.Text = "Input Value";
@@ -139,12 +142,21 @@
             this.btnPrimes.Text = "Primes Range";
             this.btnPrimes.UseVisualStyleBackColor = true;
             // 
+            // txtInput
+            // 
+            this.txtInput.Location = new System.Drawing.Point(15, 27);
+            this.txtInput.Name = "txtInput";
+            this.txtInput.Size = new System.Drawing.Size(189, 23);
+            this.txtInput.TabIndex = 0;
+            this.txtInput.Text = "15";
+            this.txtInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(920, 504);
+            this.ClientSize = new System.Drawing.Size(920, 450);
             this.Controls.Add(this.grpbInput);
             this.Controls.Add(this.grpbResults);
             this.Controls.Add(this.grpbCollection);
@@ -155,6 +167,8 @@
             this.Text = "Algorithms And Problems in a GUI , By Georgios Zacharidis";
             this.grpbCollection.ResumeLayout(false);
             this.grpbResults.ResumeLayout(false);
+            this.grpbInput.ResumeLayout(false);
+            this.grpbInput.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -171,5 +185,6 @@
         private GroupBox grpbInput;
         private Button btnPrimes;
         private Button btnFactorial;
+        private TextBox txtInput;
     }
 }
