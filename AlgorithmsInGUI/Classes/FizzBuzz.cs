@@ -8,5 +8,7 @@ namespace AlgorithmsInGUI.Classes
 {
     internal class FizzBuzz
     {
+        FizzBuzz() { }
+        
     }
 }
