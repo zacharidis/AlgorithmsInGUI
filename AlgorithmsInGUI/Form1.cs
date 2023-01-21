@@ -1,4 +1,5 @@
 using AlgorithmsInGUI.Classes;
+using System.Text;
 
 namespace AlgorithmsInGUI
 {
@@ -25,7 +26,11 @@ namespace AlgorithmsInGUI
 
             FizzBuzz fizzBuzz = new FizzBuzz();
 
-            fizzBuzz.Solve(int.Parse(txtInput.Text));
+            StringBuilder stringBuilder= new StringBuilder();
+            stringBuilder= (fizzBuzz.Solve(int.Parse(txtInput.Text)));
+            lstResults.Items.Add(stringBuilder.ToString());
+
+            
 
 
         }

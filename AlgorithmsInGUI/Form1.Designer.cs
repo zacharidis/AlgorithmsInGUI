@@ -30,14 +30,14 @@
         {
             this.btnAbout = new System.Windows.Forms.Button();
             this.grpbCollection = new System.Windows.Forms.GroupBox();
+            this.btnPrimes = new System.Windows.Forms.Button();
+            this.btnFactorial = new System.Windows.Forms.Button();
+            this.btnPow = new System.Windows.Forms.Button();
+            this.btnPalindrome = new System.Windows.Forms.Button();
             this.btnFizz = new System.Windows.Forms.Button();
             this.grpbResults = new System.Windows.Forms.GroupBox();
             this.lstResults = new System.Windows.Forms.ListBox();
             this.grpbInput = new System.Windows.Forms.GroupBox();
-            this.btnPalindrome = new System.Windows.Forms.Button();
-            this.btnPow = new System.Windows.Forms.Button();
-            this.btnFactorial = new System.Windows.Forms.Button();
-            this.btnPrimes = new System.Windows.Forms.Button();
             this.txtInput = new System.Windows.Forms.TextBox();
             this.grpbCollection.SuspendLayout();
             this.grpbResults.SuspendLayout();
@@ -46,7 +46,7 @@
             // 
             // btnAbout
             // 
-            this.btnAbout.Location = new System.Drawing.Point(352, 400);
+            this.btnAbout.Location = new System.Drawing.Point(248, 400);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(96, 36);
             this.btnAbout.TabIndex = 0;
@@ -63,10 +63,46 @@
             this.grpbCollection.Controls.Add(this.btnFizz);
             this.grpbCollection.Location = new System.Drawing.Point(16, 17);
             this.grpbCollection.Name = "grpbCollection";
-            this.grpbCollection.Size = new System.Drawing.Size(432, 329);
+            this.grpbCollection.Size = new System.Drawing.Size(328, 329);
             this.grpbCollection.TabIndex = 1;
             this.grpbCollection.TabStop = false;
             this.grpbCollection.Text = "Collection ";
+            // 
+            // btnPrimes
+            // 
+            this.btnPrimes.Location = new System.Drawing.Point(10, 163);
+            this.btnPrimes.Name = "btnPrimes";
+            this.btnPrimes.Size = new System.Drawing.Size(95, 25);
+            this.btnPrimes.TabIndex = 4;
+            this.btnPrimes.Text = "Primes Range";
+            this.btnPrimes.UseVisualStyleBackColor = true;
+            // 
+            // btnFactorial
+            // 
+            this.btnFactorial.Location = new System.Drawing.Point(10, 131);
+            this.btnFactorial.Name = "btnFactorial";
+            this.btnFactorial.Size = new System.Drawing.Size(95, 26);
+            this.btnFactorial.TabIndex = 3;
+            this.btnFactorial.Text = "Factorial (1..n)";
+            this.btnFactorial.UseVisualStyleBackColor = true;
+            // 
+            // btnPow
+            // 
+            this.btnPow.Location = new System.Drawing.Point(10, 99);
+            this.btnPow.Name = "btnPow";
+            this.btnPow.Size = new System.Drawing.Size(95, 26);
+            this.btnPow.TabIndex = 2;
+            this.btnPow.Text = "Power (x , n)";
+            this.btnPow.UseVisualStyleBackColor = true;
+            // 
+            // btnPalindrome
+            // 
+            this.btnPalindrome.Location = new System.Drawing.Point(10, 65);
+            this.btnPalindrome.Name = "btnPalindrome";
+            this.btnPalindrome.Size = new System.Drawing.Size(95, 28);
+            this.btnPalindrome.TabIndex = 1;
+            this.btnPalindrome.Text = "Palindrome";
+            this.btnPalindrome.UseVisualStyleBackColor = true;
             // 
             // btnFizz
             // 
@@ -81,20 +117,23 @@
             // grpbResults
             // 
             this.grpbResults.Controls.Add(this.lstResults);
-            this.grpbResults.Location = new System.Drawing.Point(470, 17);
+            this.grpbResults.Location = new System.Drawing.Point(350, 17);
             this.grpbResults.Name = "grpbResults";
-            this.grpbResults.Size = new System.Drawing.Size(434, 419);
+            this.grpbResults.Size = new System.Drawing.Size(777, 419);
             this.grpbResults.TabIndex = 2;
             this.grpbResults.TabStop = false;
             this.grpbResults.Text = "Results";
             // 
             // lstResults
             // 
+            this.lstResults.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lstResults.FormattingEnabled = true;
-            this.lstResults.ItemHeight = 15;
+            this.lstResults.HorizontalScrollbar = true;
+            this.lstResults.ItemHeight = 21;
             this.lstResults.Location = new System.Drawing.Point(17, 27);
             this.lstResults.Name = "lstResults";
-            this.lstResults.Size = new System.Drawing.Size(405, 364);
+            this.lstResults.ScrollAlwaysVisible = true;
+            this.lstResults.Size = new System.Drawing.Size(754, 382);
             this.lstResults.TabIndex = 0;
             // 
             // grpbInput
@@ -102,52 +141,16 @@
             this.grpbInput.Controls.Add(this.txtInput);
             this.grpbInput.Location = new System.Drawing.Point(18, 359);
             this.grpbInput.Name = "grpbInput";
-            this.grpbInput.Size = new System.Drawing.Size(216, 77);
+            this.grpbInput.Size = new System.Drawing.Size(164, 77);
             this.grpbInput.TabIndex = 3;
             this.grpbInput.TabStop = false;
             this.grpbInput.Text = "Input Value";
-            // 
-            // btnPalindrome
-            // 
-            this.btnPalindrome.Location = new System.Drawing.Point(10, 65);
-            this.btnPalindrome.Name = "btnPalindrome";
-            this.btnPalindrome.Size = new System.Drawing.Size(95, 28);
-            this.btnPalindrome.TabIndex = 1;
-            this.btnPalindrome.Text = "Palindrome";
-            this.btnPalindrome.UseVisualStyleBackColor = true;
-            // 
-            // btnPow
-            // 
-            this.btnPow.Location = new System.Drawing.Point(10, 99);
-            this.btnPow.Name = "btnPow";
-            this.btnPow.Size = new System.Drawing.Size(95, 26);
-            this.btnPow.TabIndex = 2;
-            this.btnPow.Text = "Power (x , n)";
-            this.btnPow.UseVisualStyleBackColor = true;
-            // 
-            // btnFactorial
-            // 
-            this.btnFactorial.Location = new System.Drawing.Point(10, 131);
-            this.btnFactorial.Name = "btnFactorial";
-            this.btnFactorial.Size = new System.Drawing.Size(95, 26);
-            this.btnFactorial.TabIndex = 3;
-            this.btnFactorial.Text = "Factorial (1..n)";
-            this.btnFactorial.UseVisualStyleBackColor = true;
-            // 
-            // btnPrimes
-            // 
-            this.btnPrimes.Location = new System.Drawing.Point(10, 163);
-            this.btnPrimes.Name = "btnPrimes";
-            this.btnPrimes.Size = new System.Drawing.Size(95, 25);
-            this.btnPrimes.TabIndex = 4;
-            this.btnPrimes.Text = "Primes Range";
-            this.btnPrimes.UseVisualStyleBackColor = true;
             // 
             // txtInput
             // 
             this.txtInput.Location = new System.Drawing.Point(15, 27);
             this.txtInput.Name = "txtInput";
-            this.txtInput.Size = new System.Drawing.Size(189, 23);
+            this.txtInput.Size = new System.Drawing.Size(136, 23);
             this.txtInput.TabIndex = 0;
             this.txtInput.Text = "15";
             this.txtInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -157,7 +160,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(920, 450);
+            this.ClientSize = new System.Drawing.Size(1139, 450);
             this.Controls.Add(this.grpbInput);
             this.Controls.Add(this.grpbResults);
             this.Controls.Add(this.grpbCollection);
