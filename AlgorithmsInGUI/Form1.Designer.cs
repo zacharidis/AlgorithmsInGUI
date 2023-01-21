@@ -76,6 +76,7 @@
             this.btnFizz.TabIndex = 0;
             this.btnFizz.Text = "FizzBuzz";
             this.btnFizz.UseVisualStyleBackColor = true;
+            this.btnFizz.Click += new System.EventHandler(this.btnFizz_Click);
             // 
             // grpbResults
             // 
