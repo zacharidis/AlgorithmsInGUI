@@ -36,6 +36,8 @@
             this.grpbInput = new System.Windows.Forms.GroupBox();
             this.btnPalindrome = new System.Windows.Forms.Button();
             this.btnPow = new System.Windows.Forms.Button();
+            this.btnFactorial = new System.Windows.Forms.Button();
+            this.btnPrimes = new System.Windows.Forms.Button();
             this.grpbCollection.SuspendLayout();
             this.grpbResults.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +54,8 @@
             // 
             // grpbCollection
             // 
+            this.grpbCollection.Controls.Add(this.btnPrimes);
+            this.grpbCollection.Controls.Add(this.btnFactorial);
             this.grpbCollection.Controls.Add(this.btnPow);
             this.grpbCollection.Controls.Add(this.btnPalindrome);
             this.grpbCollection.Controls.Add(this.btnFizz);
@@ -66,7 +70,7 @@
             // 
             this.btnFizz.Location = new System.Drawing.Point(10, 31);
             this.btnFizz.Name = "btnFizz";
-            this.btnFizz.Size = new System.Drawing.Size(82, 28);
+            this.btnFizz.Size = new System.Drawing.Size(95, 28);
             this.btnFizz.TabIndex = 0;
             this.btnFizz.Text = "FizzBuzz";
             this.btnFizz.UseVisualStyleBackColor = true;
@@ -76,7 +80,7 @@
             this.grpbResults.Controls.Add(this.lstResults);
             this.grpbResults.Location = new System.Drawing.Point(470, 17);
             this.grpbResults.Name = "grpbResults";
-            this.grpbResults.Size = new System.Drawing.Size(434, 429);
+            this.grpbResults.Size = new System.Drawing.Size(434, 419);
             this.grpbResults.TabIndex = 2;
             this.grpbResults.TabStop = false;
             this.grpbResults.Text = "Results";
@@ -87,7 +91,7 @@
             this.lstResults.ItemHeight = 15;
             this.lstResults.Location = new System.Drawing.Point(17, 27);
             this.lstResults.Name = "lstResults";
-            this.lstResults.Size = new System.Drawing.Size(405, 379);
+            this.lstResults.Size = new System.Drawing.Size(405, 364);
             this.lstResults.TabIndex = 0;
             // 
             // grpbInput
@@ -103,7 +107,7 @@
             // 
             this.btnPalindrome.Location = new System.Drawing.Point(10, 65);
             this.btnPalindrome.Name = "btnPalindrome";
-            this.btnPalindrome.Size = new System.Drawing.Size(82, 28);
+            this.btnPalindrome.Size = new System.Drawing.Size(95, 28);
             this.btnPalindrome.TabIndex = 1;
             this.btnPalindrome.Text = "Palindrome";
             this.btnPalindrome.UseVisualStyleBackColor = true;
@@ -112,10 +116,28 @@
             // 
             this.btnPow.Location = new System.Drawing.Point(10, 99);
             this.btnPow.Name = "btnPow";
-            this.btnPow.Size = new System.Drawing.Size(82, 26);
+            this.btnPow.Size = new System.Drawing.Size(95, 26);
             this.btnPow.TabIndex = 2;
             this.btnPow.Text = "Power (x , n)";
             this.btnPow.UseVisualStyleBackColor = true;
+            // 
+            // btnFactorial
+            // 
+            this.btnFactorial.Location = new System.Drawing.Point(10, 131);
+            this.btnFactorial.Name = "btnFactorial";
+            this.btnFactorial.Size = new System.Drawing.Size(95, 26);
+            this.btnFactorial.TabIndex = 3;
+            this.btnFactorial.Text = "Factorial (1..n)";
+            this.btnFactorial.UseVisualStyleBackColor = true;
+            // 
+            // btnPrimes
+            // 
+            this.btnPrimes.Location = new System.Drawing.Point(10, 163);
+            this.btnPrimes.Name = "btnPrimes";
+            this.btnPrimes.Size = new System.Drawing.Size(95, 25);
+            this.btnPrimes.TabIndex = 4;
+            this.btnPrimes.Text = "Primes Range";
+            this.btnPrimes.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -147,5 +169,7 @@
         private Button btnPow;
         private Button btnPalindrome;
         private GroupBox grpbInput;
+        private Button btnPrimes;
+        private Button btnFactorial;
     }
 }
