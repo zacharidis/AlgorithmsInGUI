@@ -30,9 +30,12 @@
         {
             this.btnAbout = new System.Windows.Forms.Button();
             this.grpbCollection = new System.Windows.Forms.GroupBox();
-            this.grpbResults = new System.Windows.Forms.GroupBox();
             this.btnFizz = new System.Windows.Forms.Button();
+            this.grpbResults = new System.Windows.Forms.GroupBox();
             this.lstResults = new System.Windows.Forms.ListBox();
+            this.grpbInput = new System.Windows.Forms.GroupBox();
+            this.btnPalindrome = new System.Windows.Forms.Button();
+            this.btnPow = new System.Windows.Forms.Button();
             this.grpbCollection.SuspendLayout();
             this.grpbResults.SuspendLayout();
             this.SuspendLayout();
@@ -49,13 +52,24 @@
             // 
             // grpbCollection
             // 
+            this.grpbCollection.Controls.Add(this.btnPow);
+            this.grpbCollection.Controls.Add(this.btnPalindrome);
             this.grpbCollection.Controls.Add(this.btnFizz);
             this.grpbCollection.Location = new System.Drawing.Point(16, 17);
             this.grpbCollection.Name = "grpbCollection";
-            this.grpbCollection.Size = new System.Drawing.Size(432, 429);
+            this.grpbCollection.Size = new System.Drawing.Size(432, 329);
             this.grpbCollection.TabIndex = 1;
             this.grpbCollection.TabStop = false;
             this.grpbCollection.Text = "Collection ";
+            // 
+            // btnFizz
+            // 
+            this.btnFizz.Location = new System.Drawing.Point(10, 31);
+            this.btnFizz.Name = "btnFizz";
+            this.btnFizz.Size = new System.Drawing.Size(82, 28);
+            this.btnFizz.TabIndex = 0;
+            this.btnFizz.Text = "FizzBuzz";
+            this.btnFizz.UseVisualStyleBackColor = true;
             // 
             // grpbResults
             // 
@@ -67,15 +81,6 @@
             this.grpbResults.TabStop = false;
             this.grpbResults.Text = "Results";
             // 
-            // btnFizz
-            // 
-            this.btnFizz.Location = new System.Drawing.Point(10, 31);
-            this.btnFizz.Name = "btnFizz";
-            this.btnFizz.Size = new System.Drawing.Size(82, 28);
-            this.btnFizz.TabIndex = 0;
-            this.btnFizz.Text = "FizzBuzz";
-            this.btnFizz.UseVisualStyleBackColor = true;
-            // 
             // lstResults
             // 
             this.lstResults.FormattingEnabled = true;
@@ -85,12 +90,40 @@
             this.lstResults.Size = new System.Drawing.Size(405, 379);
             this.lstResults.TabIndex = 0;
             // 
+            // grpbInput
+            // 
+            this.grpbInput.Location = new System.Drawing.Point(18, 359);
+            this.grpbInput.Name = "grpbInput";
+            this.grpbInput.Size = new System.Drawing.Size(428, 77);
+            this.grpbInput.TabIndex = 3;
+            this.grpbInput.TabStop = false;
+            this.grpbInput.Text = "Input Value";
+            // 
+            // btnPalindrome
+            // 
+            this.btnPalindrome.Location = new System.Drawing.Point(10, 65);
+            this.btnPalindrome.Name = "btnPalindrome";
+            this.btnPalindrome.Size = new System.Drawing.Size(82, 28);
+            this.btnPalindrome.TabIndex = 1;
+            this.btnPalindrome.Text = "Palindrome";
+            this.btnPalindrome.UseVisualStyleBackColor = true;
+            // 
+            // btnPow
+            // 
+            this.btnPow.Location = new System.Drawing.Point(10, 99);
+            this.btnPow.Name = "btnPow";
+            this.btnPow.Size = new System.Drawing.Size(82, 26);
+            this.btnPow.TabIndex = 2;
+            this.btnPow.Text = "Power (x , n)";
+            this.btnPow.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(920, 504);
+            this.Controls.Add(this.grpbInput);
             this.Controls.Add(this.grpbResults);
             this.Controls.Add(this.grpbCollection);
             this.Controls.Add(this.btnAbout);
@@ -111,5 +144,8 @@
         private Button btnFizz;
         private GroupBox grpbResults;
         private ListBox lstResults;
+        private Button btnPow;
+        private Button btnPalindrome;
+        private GroupBox grpbInput;
     }
 }
